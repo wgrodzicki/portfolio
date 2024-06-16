@@ -96,7 +96,22 @@
   top: 20vw;
 }
 
-/* #1D2125 */
+#index-carousel-link {
+  text-decoration: none;
+}
+
+#index-carousel-link-text {
+  font-size: calc(14px + 0.390625vw);
+}
+
+@media (max-width: 1200px) {
+  /* #index-top-holder {
+    top: 20vw;
+  } */
+  #index-carousel-link-text {
+    display: none;
+  }
+}
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
@@ -107,14 +122,30 @@
   }
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #index-top-holder {
-    top: 25vw;
+    top: 20vw;
   }
+} */
+
+/* @media (max-width: 576px) {
+  #index-top-holder {
+    top: 20vw;
+  }
+
+} */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
 }
 
-@media (max-width: 576px) {
-  #index-top-holder {
-    top: 30vw;
-  }
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
 }
