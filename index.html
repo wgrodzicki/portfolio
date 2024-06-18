@@ -84,7 +84,7 @@
         <!-- <div class="row py-5"></div> -->
          <div>
           <a id="index-carousel-link" href="#myCarousel" class="fw-light text-light">
-            <p id="index-carousel-link-text">Recent projects</p>
+            <p id="index-carousel-link-text">Some of my work</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
               <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
@@ -92,66 +92,80 @@
           </a>
          </div>
       </section>
-
-      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" style="background-color: #DEE2E6;">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
+
           <div class="carousel-item active">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
-            </svg>
+            <div class="mx-auto" style="width: 560px; height: 300px; padding-top: 20px;">
+              <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" style=" border-radius: 10px;"  >
+                <defs>
+                  <clippath id="img-cover-first">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"   />
+                    <!-- <circle cx="120" cy="120" r="100" /> -->
+                  </clippath>
+                </defs>
+                <image xlink:href="resources/cosmic-cover.jpg" width="560" clip-path="url(#img-cover-first)">
+              </svg>
+            </div>
+
             <div class="container">
-              <!-- THE EMBEDDED VIDEO MUST SOMEHOW REPLACE THE <svg> ABOVE!!! -->
-              <!-- <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zB4I68XVPzQ"></iframe>
-              </div> -->
               <div class="carousel-caption">
                 <h1>Cosmic: A Journey Among Shadows</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                <p>Dynamic metroidvania with unique shadow-light mechanics developed at King's Pleasure. Available on Steam.</p>
+                <p><a class="btn btn-lg btn-secondary" href="https://store.steampowered.com/app/1769100/Cosmic_A_Journey_Among_Shadows/">Find out more</a></p>
               </div>
             </div>
-            <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-            <div class="container">
-              <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-              </div>
-            </div> -->
           </div>
+
           <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="mx-auto" style="width: 560px; height: 300px; padding-top: 20px;">
+              <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" style=" border-radius: 10px;">
+                <defs>
+                  <clippath id="img-cover-second">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+                  </clippath>
+                </defs>
+                <image xlink:href="resources/ad-astra-cover.png" width="560" clip-path="url(#img-cover-second)">
+              </svg>
+            </div>
+
             <div class="container">
               <div class="carousel-caption">
-                <h1>Example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                <h1>Ad Astra</h1>
+                <p>Classic 2D platformer with some puzzle-like mechanics and scripted events. Personal project made in Unity.</p>
+                <p><a class="btn btn-lg btn-secondary" href="https://wgrodzicki.itch.io/ad-astra">Find out more</a></p>
               </div>
             </div>
           </div>
+
           <div class="carousel-item">
-            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <div class="mx-auto" style="width: 560px; height: 300px; padding-top: 20px;">
+              <svg class="bd-placeholder-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" style=" border-radius: 10px;">
+                <defs>
+                  <clippath id="img-cover-third">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"/>
+                    <!-- <circle cx="120" cy="120" r="100" /> -->
+                  </clippath>
+                </defs>
+                <image xlink:href="resources/the-eradicator-cover.png" width="560"  clip-path="url(#img-cover-third)">
+              </svg>
+            </div>
+
             <div class="container">
               <div class="carousel-caption">
-                <h1>Final example headline.</h1>
-                <p>Some representative placeholder content for the second slide of the carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                <h1>The Eradicator</h1>
+                <p>Endless side-scroller embedded in a full-stack application. Personal project made with JavaScript and Python.</p>
+                <p><a class="btn btn-lg btn-secondary" href="https://wgrodzicki.pythonanywhere.com/">Find out more</a></p>
               </div>
             </div>
-            <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
-            <div class="container">
-              <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>Some representative placeholder content for the third slide of this carousel.</p>
-                <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-              </div>
-            </div> -->
           </div>
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
