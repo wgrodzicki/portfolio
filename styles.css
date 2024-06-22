@@ -1,9 +1,17 @@
-.bd-placeholder-img {
+main {
+  background-color: #1D2125;
+}
+
+.bd-placeholder-img, .index-carousel-img {
   font-size: 1.125rem;
   text-anchor: middle;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+.index-carousel-img {
+  border-radius: 10px;
 }
 
 .b-example-divider {
@@ -69,6 +77,10 @@
   display: block !important;
 }
 
+.nav-item {
+  font-size: calc(16px + 0.390625vw);;
+}
+
 #index-name {
   /* From: https://matthewjamestaylor.com/responsive-font-size */
   font-size: calc(40px + 0.390625vw);
@@ -79,7 +91,6 @@
 }
 
 #index-background-video {
-    /* position: relative; */
     object-fit: cover;
     left: 0;
     right: 0;
@@ -87,7 +98,6 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    /* z-index:-1; */
 }
 
 #index-top-holder {
@@ -104,37 +114,6 @@
   font-size: calc(14px + 0.390625vw);
 }
 
-@media (max-width: 1200px) {
-  /* #index-top-holder {
-    top: 20vw;
-  } */
-  #index-carousel-link-text {
-    display: none;
-  }
-}
-
-@media (min-width: 768px) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-  #index-name {
-    font-size: calc(60px + 0.390625vw);
-  }
-}
-
-/* @media (max-width: 768px) {
-  #index-top-holder {
-    top: 20vw;
-  }
-} */
-
-/* @media (max-width: 576px) {
-  #index-top-holder {
-    top: 20vw;
-  }
-
-} */
-
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
@@ -148,4 +127,58 @@
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
+}
+
+#index-carousel {
+  background-color: #DEE2E6;
+}
+
+.index-carousel-img-holder {
+  width: 560px;
+  height: 300px;
+  padding-top: 20px;
+}
+
+.index-carousel-caption-title {
+  font-size: calc(32px + 0.390625vw);
+}
+
+.index-carousel-caption-description {
+
+}
+
+@media (max-width: 1200px) {
+  #index-carousel-link-text {
+    display: none;
+  }
+  .index-carousel-caption-title {
+    font-size: calc(24px + 0.390625vw);
+  }
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+  #index-name {
+    font-size: calc(60px + 0.390625vw);
+  }
+}
+
+@media (max-width: 768px) {
+  .index-carousel-img-holder {
+    width: 280px;
+    height: 240px;
+    padding-top: 10px;
+  }
+  .carousel-item {
+    height: 26rem;
+  }
+  .index-carousel-caption-title {
+    font-size: calc(24px + 0.390625vw);
+    margin-bottom: 20px;
+  }
+  .index-carousel-caption-description {
+    display: none;
+  }
 }
