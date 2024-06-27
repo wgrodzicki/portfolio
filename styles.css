@@ -1,5 +1,6 @@
 main {
-  background-color: #1D2125;
+  /* background-color: #1D2125; */
+  background-color: #2D3235;
 }
 
 .bd-placeholder-img, .index-carousel-img {
@@ -130,6 +131,7 @@ main {
 }
 
 #index-carousel {
+  padding-top: 50px;
   background-color: #DEE2E6;
 }
 
@@ -175,7 +177,7 @@ main {
     height: 26rem;
   }
   .index-carousel-caption-title {
-    font-size: calc(24px + 0.390625vw);
+    font-size: calc(19px + 0.390625vw);
     margin-bottom: 20px;
   }
   .index-carousel-caption-description {
