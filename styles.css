@@ -1,6 +1,24 @@
+/* General */
 main {
-  /* background-color: #1D2125; */
   background-color: #2D3235;
+}
+
+.custom-link {
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  text-decoration: underline !important;
+}
+
+@keyframes img-animation {
+  from {opacity: 0.0;}
+  to {opacity: 1.0;}
+}
+
+.animated-img {
+  animation-name: img-animation;
+  animation-duration: 3s;
 }
 
 .bd-placeholder-img, .index-carousel-img {
@@ -56,7 +74,6 @@ main {
 .btn-bd-primary {
   --bd-violet-bg: #712cf9;
   --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
   --bs-btn-font-weight: 600;
   --bs-btn-color: var(--bs-white);
   --bs-btn-bg: var(--bd-violet-bg);
@@ -82,6 +99,30 @@ main {
   font-size: calc(16px + 0.390625vw);;
 }
 
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+/* Index */
+.index-carousel-img-holder {
+  width: 560px;
+  height: 300px;
+  padding-top: 20px;
+}
+
+.index-carousel-caption-title {
+  font-size: calc(32px + 0.390625vw);
+}
+
 #index-name {
   /* From: https://matthewjamestaylor.com/responsive-font-size */
   font-size: calc(40px + 0.390625vw);
@@ -89,6 +130,10 @@ main {
 
 #index-titles {
   font-size: calc(25px + 0.390625vw);
+}
+
+#index-background-video-holder {
+  padding-top: 50px;
 }
 
 #index-background-video {
@@ -107,6 +152,11 @@ main {
   top: 20vw;
 }
 
+#index-carousel {
+  padding-top: 50px;
+  background-color: #DEE2E6;
+}
+
 #index-carousel-link {
   text-decoration: none;
 }
@@ -115,40 +165,12 @@ main {
   font-size: calc(14px + 0.390625vw);
 }
 
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
+/* About */
+#about-content-holder {
+  margin-top: 50px;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-
-#index-carousel {
-  padding-top: 50px;
-  background-color: #DEE2E6;
-}
-
-.index-carousel-img-holder {
-  width: 560px;
-  height: 300px;
-  padding-top: 20px;
-}
-
-.index-carousel-caption-title {
-  font-size: calc(32px + 0.390625vw);
-}
-
-.index-carousel-caption-description {
-
-}
-
+/* Responsiveness */
 @media (max-width: 1200px) {
   #index-carousel-link-text {
     display: none;
@@ -164,6 +186,9 @@ main {
   }
   #index-name {
     font-size: calc(60px + 0.390625vw);
+  }
+  #about-margin-columns {
+    display: none;
   }
 }
 
@@ -182,5 +207,14 @@ main {
   }
   .index-carousel-caption-description {
     display: none;
+  }
+  #index-titles {
+    font-size: calc(15px + 0.390625vw);
+  }
+  #about-content-holder {
+    margin-top: 0px;
+  }
+  #about-text-holder {
+    margin-top: 30px;
   }
 }
