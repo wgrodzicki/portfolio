@@ -172,6 +172,13 @@ main {
 
 /* Responsiveness */
 @media (max-width: 1200px) {
+  #index-top-holder {
+    left: 10vw;
+    right: 10vw;
+  }
+  #index-name {
+    /* font-size: calc(24px + 0.390625vw); */
+  }
   #index-carousel-link-text {
     display: none;
   }
@@ -179,6 +186,13 @@ main {
     font-size: calc(24px + 0.390625vw);
   }
 }
+
+@media (max-width: 992px) {
+  #index-top-holder {
+    top: 25vw;
+  }
+}
+
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
@@ -216,5 +230,11 @@ main {
   }
   #about-text-holder {
     margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  #index-top-holder {
+    top: 30vw;
   }
 }
