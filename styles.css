@@ -173,6 +173,12 @@ main {
   text-decoration: none;
 }
 
+#index-carousel-link-text-holder {
+  background-color: #DEE2E6;
+  height: 80px;
+  padding-top: 40px;
+}
+
 #index-carousel-link-text {
   font-size: calc(14px + 0.390625vw);
 }
@@ -206,56 +212,83 @@ main {
 #animated-bar-0, #animated-bar-label-0 {
   animation-name: appear-animation;
   animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
 
 #animated-bar-1, #animated-bar-label-1 {
   animation-name: appear-animation;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
 }
 
 #animated-bar-2, #animated-bar-label-2 {
   animation-name: appear-animation;
-  animation-duration: 2s;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
 }
 
 #animated-bar-3, #animated-bar-label-3 {
   animation-name: appear-animation;
-  animation-duration: 2.5s;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
 }
 
 #animated-bar-4, #animated-bar-label-4 {
   animation-name: appear-animation;
-  animation-duration: 3s;
+  animation-duration: 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: backwards;
 }
 
 #animated-bar-5, #animated-bar-label-5 {
   animation-name: appear-animation;
-  animation-duration: 3.5s;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
 }
 
 #animated-bar-6, #animated-bar-label-6 {
   animation-name: appear-animation;
-  animation-duration: 4s;
+  animation-duration: 1s;
+  animation-delay: 3.5s;
+  animation-fill-mode: backwards;
 }
 
 #animated-bar-7, #animated-bar-label-7 {
   animation-name: appear-animation;
-  animation-duration: 4.5s;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-fill-mode: backwards;
 }
 
 #animated-bar-8, #animated-bar-label-8 {
   animation-name: appear-animation;
-  animation-duration: 5s;
+  animation-duration: 1s;
+  animation-delay: 4.5s;
+  animation-fill-mode: backwards;
 }
 
 #animated-bar-9, #animated-bar-label-9 {
   animation-name: appear-animation;
-  animation-duration: 5.5s;
+  animation-duration: 1s;
+  animation-delay: 5s;
+  animation-fill-mode: backwards;
 }
 
 #animated-bar-10, #animated-bar-label-10 {
   animation-name: appear-animation;
-  animation-duration: 6s;
+  animation-duration: 1s;
+  animation-delay: 5.5s;
+  animation-fill-mode: backwards;
+}
+
+/* Projects */
+.card-img-top {
+  margin-bottom: 10px;
 }
 
 /* Responsiveness */
@@ -267,9 +300,6 @@ main {
   #index-name {
     /* font-size: calc(24px + 0.390625vw); */
   }
-  #index-carousel-link-text {
-    display: none;
-  }
   .index-carousel-caption-title {
     font-size: calc(24px + 0.390625vw);
   }
@@ -278,6 +308,9 @@ main {
 @media (max-width: 992px) {
   #index-top-holder {
     top: 25vw;
+  }
+  .card-img-top {
+    height: 110px;
   }
 }
 

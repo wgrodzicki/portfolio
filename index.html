@@ -31,6 +31,7 @@
       </symbol>
     </svg>
 
+    <!-- Navbar -->
     <header data-bs-theme="dark">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
@@ -62,6 +63,7 @@
 
     <main>
 
+      <!-- Top intro -->
       <section class="py-5 text-center container">
         <div class="row py-3">
           <div class="col-lg-8 col-md-10 col-10 mx-auto">
@@ -69,16 +71,15 @@
               <div id="index-name" class="fw-normal text-light">Wojciech Grodzicki</div>
               <p id="index-titles" class="lead fw-medium">Programmer - Game Developer - Modder</p>
             </div>
-            <div id="index-background-video-holder" class="z-0 position-relative">
-              <video id="index-background-video" autoplay muted>
+            <div id="index-background-video-holder" class="z-0 position-relative animated-img">
+              <video id="index-background-video" autoplay muted loop>
                 <source src="resources/index-background-video.mp4" type="video/mp4">
               </video>
             </div>
           </div>
         </div>
          <div>
-          <a id="index-carousel-link" href="#index-carousel" class="fw-light text-light">
-            <!-- <p id="index-carousel-link-text">View my work</p> -->
+          <a id="index-carousel-link" href="#index-carousel-link-target" class="fw-light text-light">
              <br>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
@@ -87,7 +88,13 @@
           </a>
          </div>
       </section>
+
+      <br id="index-carousel-link-target">
+      <div id="index-carousel-link-text-holder">
+        <p id="index-carousel-link-text" class="text-center fs-2 fw-medium text-dark" >Some of my recent work</p>
+      </div>
       
+      <!-- Carousel -->
       <div id="index-carousel" class="carousel slide mb-6" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -95,7 +102,6 @@
           <button type="button" data-bs-target="#index-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-
           <div class="carousel-item active">
             <div class="index-carousel-img-holder mx-auto">
               <svg class="index-carousel-img" width="100%" height="100%" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
