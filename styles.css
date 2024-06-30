@@ -3,7 +3,19 @@ main {
   background-color: #2D3235;
 }
 
+.btn {
+  /* background-color: #6f42c1 !important; */
+  background-color: #6C2126 !important;
+  border-color: #6C2126 !important;
+}
+
+.btn:hover {
+  background-color: #B6666B !important;
+  border-color: #B6666B !important;
+}
+
 .custom-link {
+  color: #B6666B !important;
   text-decoration: none;
 }
 
@@ -11,13 +23,13 @@ main {
   text-decoration: underline !important;
 }
 
-@keyframes img-animation {
+@keyframes appear-animation {
   from {opacity: 0.0;}
   to {opacity: 1.0;}
 }
 
 .animated-img {
-  animation-name: img-animation;
+  animation-name: appear-animation;
   animation-duration: 3s;
 }
 
@@ -167,7 +179,83 @@ main {
 
 /* About */
 #about-content-holder {
-  margin-top: 50px;
+  margin-top: 60px;
+}
+
+/* Skills */
+.skills-holder {
+  height: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.skills-label {
+  font-size: 18px;
+}
+.progress {
+  height: 28px !important;
+}
+
+.progress-bar {
+  background-color: #AB464D !important;
+}
+
+#skills-content-holder {
+  margin-top: 60px;
+}
+
+#animated-bar-0, #animated-bar-label-0 {
+  animation-name: appear-animation;
+  animation-duration: 1s;
+}
+
+#animated-bar-1, #animated-bar-label-1 {
+  animation-name: appear-animation;
+  animation-duration: 1.5s;
+}
+
+#animated-bar-2, #animated-bar-label-2 {
+  animation-name: appear-animation;
+  animation-duration: 2s;
+}
+
+#animated-bar-3, #animated-bar-label-3 {
+  animation-name: appear-animation;
+  animation-duration: 2.5s;
+}
+
+#animated-bar-4, #animated-bar-label-4 {
+  animation-name: appear-animation;
+  animation-duration: 3s;
+}
+
+#animated-bar-5, #animated-bar-label-5 {
+  animation-name: appear-animation;
+  animation-duration: 3.5s;
+}
+
+#animated-bar-6, #animated-bar-label-6 {
+  animation-name: appear-animation;
+  animation-duration: 4s;
+}
+
+#animated-bar-7, #animated-bar-label-7 {
+  animation-name: appear-animation;
+  animation-duration: 4.5s;
+}
+
+#animated-bar-8, #animated-bar-label-8 {
+  animation-name: appear-animation;
+  animation-duration: 5s;
+}
+
+#animated-bar-9, #animated-bar-label-9 {
+  animation-name: appear-animation;
+  animation-duration: 5.5s;
+}
+
+#animated-bar-10, #animated-bar-label-10 {
+  animation-name: appear-animation;
+  animation-duration: 6s;
 }
 
 /* Responsiveness */
@@ -192,7 +280,6 @@ main {
     top: 25vw;
   }
 }
-
 
 @media (min-width: 768px) {
   .bd-placeholder-img-lg {
@@ -225,11 +312,21 @@ main {
   #index-titles {
     font-size: calc(15px + 0.390625vw);
   }
+  #index-carousel-img-2 {
+    x:-120;
+  }
+  #index-carousel-img-3 {
+    x:-140;
+    y:-20;
+  }
   #about-content-holder {
-    margin-top: 0px;
+    margin-top: 40px;
   }
   #about-text-holder {
     margin-top: 30px;
+  }
+  #skills-content-holder {
+    margin-top: 40px;
   }
 }
 
