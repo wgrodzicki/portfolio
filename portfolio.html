@@ -11,7 +11,7 @@
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link href="styles.css" rel="stylesheet">
+    <link href="styles/styles.css" rel="stylesheet">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body data-bs-theme="dark">
@@ -583,8 +583,24 @@
 
     <main>
 
-      <section class="py-5 text-center container">
-        <div class="album py-5 bg-body-tertiary">
+      <section class="py-5 container">
+
+        <!-- Category dropdown -->
+        <div id="portfolio-dropdown" class="dropdown">
+          <button id="portfolio-dropdown-btn" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Category
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">All</a></li>
+            <li><a class="dropdown-item">Games</a></li>
+            <li><a class="dropdown-item">Unity</a></li>
+            <li><a class="dropdown-item">Web</a></li>
+            <li><a class="dropdown-item">.NET</a></li>
+            <li><a class="dropdown-item">Mods</a></li>
+          </ul>
+        </div>
+
+        <div class="album py-5 text-center">
           <div class="container">
 
             <!-- Cards -->
@@ -592,6 +608,7 @@
 
               <!-- Card 0 -->
               <div id="card-0" class="col">
+                <span class="portfolio-category-tag">games unity</span>
                 <div class="card shadow-sm">
                   <svg class="card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-0-modal">
                     <image href="resources/cosmic-thumbnail.jpg" width="100%">
@@ -610,6 +627,7 @@
 
               <!-- Card 1 -->
               <div id="card-1" class="col">
+                <span class="portfolio-category-tag">games unity</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-1-modal">
                     <image href="resources/ad-astra-thumbnail.png" width="100%">
@@ -628,6 +646,7 @@
 
               <!-- Card 2 -->
               <div id="card-2" class="col">
+                <span class="portfolio-category-tag">games .net</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-2-modal">
                     <image href="resources/math-or-words-thumbnail.PNG" width="100%">
@@ -646,6 +665,7 @@
 
               <!-- Card 13 -->
               <div id="card-13" class="col">
+                <span class="portfolio-category-tag">games unity</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-13-modal">
                     <image href="resources/space-out-of-control-thumbnail.png" width="100%">
@@ -664,6 +684,7 @@
               
               <!-- Card 3 -->
               <div id="card-3" class="col">
+                <span class="portfolio-category-tag">games unity</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-3-modal">
                     <image href="resources/space-ronin-thumbnail.png" width="100%">
@@ -682,6 +703,7 @@
 
               <!-- Card 4 -->
               <div id="card-4" class="col">
+                <span class="portfolio-category-tag">games web</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-4-modal">
                     <image href="resources/the-eradicator-thumbnail.png" width="100%">
@@ -700,6 +722,7 @@
 
               <!-- Card 5 -->
               <div id="card-5" class="col">
+                <span class="portfolio-category-tag">games .net</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-5-modal">
                     <image href="resources/winoxo-thumbnail.png" width="100%">
@@ -718,6 +741,7 @@
               
               <!-- Card 6 -->
               <div id="card-6" class="col">
+                <span class="portfolio-category-tag">web .net</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-6-modal">
                     <image href="resources/habithub-thumbnail.png" width="100%">
@@ -736,6 +760,7 @@
 
               <!-- Card 7 -->
               <div id="card-7" class="col">
+                <span class="portfolio-category-tag">web .net</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-7-modal">
                     <image href="resources/warehouse-thumbnail.png" width="100%">
@@ -754,6 +779,7 @@
 
               <!-- Card 8 -->
               <div id="card-8" class="col">
+                <span class="portfolio-category-tag">.net</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-8-modal">
                     <image href="resources/numapp-thumbnail.png" width="100%">
@@ -772,6 +798,7 @@
               
               <!-- Card 9 -->
               <div id="card-9" class="col">
+                <span class="portfolio-category-tag">mods</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-9-modal">
                     <image href="resources/alchemical-hustle-thumbnail.png" width="100%">
@@ -790,6 +817,7 @@
 
               <!-- Card 10 -->
               <div id="card-10" class="col">
+                <span class="portfolio-category-tag">mods</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-10-modal">
                     <image href="resources/dissident-ordinators-thumbnail.png" width="100%">
@@ -808,6 +836,7 @@
 
               <!-- Card 11 -->
               <div id="card-11" class="col">
+                <span class="portfolio-category-tag">mods</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-11-modal">
                     <image href="resources/morag-tong-armor-revisited-thumbnail.png" width="100%">
@@ -826,6 +855,7 @@
 
               <!-- Card 12 -->
               <div id="card-12" class="col">
+                <span class="portfolio-category-tag">mods</span>
                 <div class="card shadow-sm">
                   <svg class="bd-placeholder-img card-img-top" width="100%" role="img" preserveAspectRatio="xMidYMid slice" focusable="false" data-bs-toggle="modal" data-bs-target="#card-12-modal">
                     <image href="resources/from-the-flaming-thumbnail.png" width="100%">
@@ -858,6 +888,7 @@
       </div>
     </footer> -->
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
 
   </body>
 </html>

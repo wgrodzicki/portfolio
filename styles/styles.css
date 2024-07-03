@@ -4,7 +4,6 @@ main {
 }
 
 .btn {
-  /* background-color: #6f42c1 !important; */
   background-color: #6C2126 !important;
   border-color: #6C2126 !important;
 }
@@ -21,6 +20,14 @@ main {
 
 .custom-link:hover {
   text-decoration: underline !important;
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+}
+
+.dropdown-item:active {
+  background-color: #B6666B !important;
 }
 
 @keyframes appear-animation {
@@ -282,7 +289,7 @@ main {
   animation-fill-mode: backwards;
 }
 
-/* Projects */
+/* Portfolio */
 .card-img-top {
   height: 190px;
   margin-bottom: 10px;
@@ -295,6 +302,15 @@ main {
 .card-img-modal {
   height: 250px;
   margin-bottom: 10px;
+}
+
+.portfolio-category-tag {
+  display: none;
+}
+
+#portfolio-dropdown {
+  margin-top: 50px;
+  margin-left: 12px;
 }
 
 /* Contact */
@@ -397,13 +413,16 @@ main {
   #skills-content-holder {
     margin-top: 40px;
   }
-  /* #contact-margin-columns {
-    display: none;
-  } */
 }
 
 @media (max-width: 576px) {
   #index-top-holder {
     top: 30vw;
+  }
+}
+
+@media (max-width: 575px) {
+  .card-img-top {
+    height: 250px;
   }
 }
